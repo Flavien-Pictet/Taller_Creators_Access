@@ -9,7 +9,7 @@ export default function PasswordModal({ onSuccess }) {
 
   const handleSubmit = (e) => {
     if (e) e.preventDefault();
-    if (password === 'elon1z') {
+    if (password === 'taller2025') {
       setIsValidating(true);
       // Animation de succès
       setTimeout(() => {

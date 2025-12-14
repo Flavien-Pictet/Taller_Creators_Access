@@ -1,5 +1,6 @@
 // src/App.js
 import React, { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import TallerDashboard from './components/TallerDashboard';
 import PasswordModal from './components/PasswordModal';
 
@@ -18,7 +19,10 @@ export default function App() {
 
   return (
     <div style={{ minHeight: '100vh', background: '#0f172a' }}>
-      <TallerDashboard />
+      <Routes>
+        <Route path="/" element={<TallerDashboard />} />
+        <Route path="/:username" element={<TallerDashboard />} />
+      </Routes>
     </div>
   );
 }

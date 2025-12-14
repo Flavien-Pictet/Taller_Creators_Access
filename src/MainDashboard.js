@@ -7,7 +7,7 @@ const PasswordModal = ({ onSuccess }) => {
   const [error, setError] = useState('');
 
   const handleSubmit = () => {
-    if (password === 'elon1z') {
+    if (password === 'taller2025') {
       sessionStorage.setItem('authenticated', 'true');
       onSuccess();
     } else {
